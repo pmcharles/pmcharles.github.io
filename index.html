@@ -1,42 +1,83 @@
 <!DOCTYPE html>
-<html>
-	<head>
-        <title>Phil Charles</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <!-- Bootstrap -->
-            <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-            <link href="css/mystyle.css" rel="stylesheet">
-            <link rel="stylesheet" href="academicons-1.8.6/css/academicons.min.css"/>
-        <script src="https://kit.fontawesome.com/60848b8342.js" crossorigin="anonymous"></script>   
-    </head>
-	<body>
-		<nav class="navbar sticky-top navbar-expand-lg navbar-light justify-content-between">
-			<div class="container">
-				<a class="navbar-brand" mb-0 h1>Phil Charles</a>
-				<button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					 <span class="navbar-toggler-icon"></span>
-				</button>
-				
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto ">
-				 <li class="nav-item active">
-					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-				 </li>
-				 <!-- <li class="nav-item">
-					<a class="nav-link" href="cv.html">CV</a>
-				 </li> -->
-				 <li class="nav-item">
-					<a class="nav-link" href="publications.html">Publications</a>
-				 </li>
-				 <li class="nav-item">
-					<a class="nav-link" href="talks.html">Talks</a>
-				 </li>
-				 <li class="nav-item">
-					<a class="nav-link" href="codes.html">Codes</a>
-				 </li>
-		</ul>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Phil Charles</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="academicons-1.9.4/css/academicons.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="talks.html">Talks</a></li>
+                    <li><a href="codes.html">Codes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content -->
+	<div class="row">
+		<div class="column left">
+			<div class="image-container">
+				<div class="image">
+					<img src="Images/Charles_Philip.jpg" alt="Profile Image">
+				</div>
+				<div class="line"></div>
+				<div class="image-caption">
+					<h1>Scientific Computation PhD Student</h1>
+					<p>University of Maryland, College Park</p>
+				</div>
+				<div class="line"></div>
+				  <div class="small-images">
+					<a href="https://orcid.org/0009-0002-8387-8427" target="_blank" rel="noopener noreferrer">
+						<img src="Orcid-logos/ORCID-iD_icon_vector.svg" alt="Orcid" class="small-image">
+					</a>
+					<a href="https://www.linkedin.com/in/phil-charles-328925187/" target="_blank" rel="noopener noreferrer">
+						<img src="linkedin-logos/LinkedIn-Logos/In/Digital/Blue/2x/In-Blue-128@2x.png" alt="LinkedIn" class="small-image">
+					</a>
+				  </div>
+			</div>
 		</div>
+		<div class="column right">
+			<section id="about" class="homepage_right_col">
+				<div class="container">
+					<h1>Phil Charles</h1>
+					<p>I am a fifth-year Scientific Computation PhD student at the University of Maryland, College Park. My main research interests and experience lie at the intersection of numerical PDE solvers and deep learning.</p>
+					<p>In my doctoral research, I have implemented deep learning into numerical solvers for PDEs through two approaches:</p>
+					<ol>
+						<li>The deep learning model is incorporated in a less intrusive manner. To this end, consider a numerical PDE solver that is mathematically sound. Now, if there is some component that has a bottleneck (e.g. expensive or constrained algorithm), it is possible to repace it with a suitable neural network.</li>
+						<li>The deep learning model itself serves as the full PDE solver (as in a surrogate model in operator learning). However, it is important to embed the structure of the PDE (e.g. the variational form of the PDE) into the model's architecture to make the deep-learned model more interpretable.</li>
+					</ol>
+				</div>
+			</section>
 		</div>
-		</nav>
+    </div>
+	
+
+<!--     <section id="contact" class="section">
+        <div class="container">
+            <h1>Contact Me</h1>
+            <p>Feel free to reach out to me through the following ways:</p>
+            <ul>
+                <li>Email: <a href="mailto:charlesp@umd.edu">charlesp@umd.edu</a></li>
+                <li>LinkedIn: <a href="#">Your LinkedIn</a></li>
+                <li>GitHub: <a href="#">Your GitHub</a></li>
+            </ul>
+        </div>
+    </section> -->
+
+    <footer>
+        <div class="container">
+            <p>Last Updated: February 5, 2025</p>
+        </div>
+    </footer>
 </body>
 </html>
